@@ -331,7 +331,7 @@
                        {   url: "http://localhost:8080/rest/api/novosti/"+ $("input[name=brisanje]").val(),
                            method:"delete",
                            success:function(){
-                            alert("Odgovor od servera> "+data['poruka']);
+                            alert("Odgovor od servera> "+['Novost je obrisana.']);
                            }
                        }
                    )
@@ -341,7 +341,7 @@
                            url: "http://localhost:8080/rest/api/kategorije/"+ $("input[name=brisanje]").val(),
                            method:"delete",
                            success:function(){
-                           alert("Odgovor od servera> "+data['poruka']);
+                           alert("Odgovor od servera> "+['Kategorija je obrisana.']);
                            }
                        }
                    )};
